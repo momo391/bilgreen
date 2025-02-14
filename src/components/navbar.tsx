@@ -27,10 +27,13 @@ export const NavLink = ({ title, href, active = false }: NavLinkProps) => {
     >
       {title}
       <div
-        className={cn("absolute bg-primary w-0 h-[3px] md:h-0.5 duration-300", {
-          "w-full": active,
-          "group-hover:w-full": !active,
-        })}
+        className={cn(
+          "absolute bg-[#4caf50] w-0 h-[2.5px] md:h-0.5 duration-300",
+          {
+            "w-full": active,
+            "group-hover:w-full": !active,
+          }
+        )}
       />
     </Link>
   );
